@@ -11,15 +11,15 @@
     </style>
 </head>
 <body>
-     <audio id="peido" src="midia/peido.mp3" type="audio/mpeg"></audio>
-    <img src="imagens/botao.png" alt="image/png" onclick="tocar()">
+     <audio id="peido" src="peido.mp3" type="audio/mpeg"></audio>
+    <img src="botao.png" alt="image/png" onclick="tocar()">
     <h1>CLIQUE PARA O AUDIO MAIS EMOCIONANTE DE TODOS</h1>
 
     <script>
         var sons = [
-            new Audio("midia/peido.mp3"),
-            new Audio("midia/peido.mp3"),
-            new Audio("midia/peido.mp3")
+            new Audio("peido.mp3"),
+            new Audio("peido.mp3"),
+            new Audio("peido.mp3")
         ]
         function tocar() {
             var som = sons[Math.floor(Math.random() * sons.length)]
@@ -29,4 +29,5 @@
         }
     </script>
 </body>
+
 </html>
