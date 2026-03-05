@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <audio id="peido" src="midia/peido.mp3" type="audio/mpeg"></audio>
+    <img src="imagens/botao.png" alt="image/png" onclick="tocar()">
+    <h1>CLIQUE PARA O AUDIO MAIS EMOCIONANTE DE TODOS</h1>
+
+    <script>
+        var sons = [
+            new Audio("midia/peido.mp3"),
+            new Audio("midia/peido.mp3"),
+            new Audio("midia/peido.mp3")
+        ]
+        function tocar() {
+            var som = sons[Math.floor(Math.random() * sons.length)]
+            som.currentTime = 0
+            som.play()
+            
+        }
+    </script>
+</body>
+</html>
